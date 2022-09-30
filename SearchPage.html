@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Page</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/homepage.css">
+    <script 
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+    ></script>
 </head>
 <body>
     <div id="navbar">
         <a href="index.html"><img src="https://d2v8elt324ukrb.cloudfront.net/static/riotuikit/images/logo.c72056a22f91.png" alt=""></a>
         
         <div id="nav-right-box">
-            <div id="icon">icon</div>
+            <i  id="icon" class="fa-sharp fa-solid fa-user"></i>
             <select id="curency">
                 <option value="option">INR</option>
                 <option value="INR">INR</option>
@@ -26,7 +31,7 @@
                 <option value="ILS">ILS</option>
                 <option value="NZD">NZD</option>
             </select>
-            <div id="sidepopup">3 lines</div>
+            <i id="sidepopup" class="fa-solid fa-bars"></i>
         </div>
     </div>
 
@@ -37,34 +42,44 @@
         </div>
     
         <div id="signinwindow">
-            <button class="signup">Sign Up Insted</button>
-            <h1>Sign In</h1>
-            <select class="countrycode">
-                <option value="ind">+1</option>
-                <option value="ind">+20</option>
-                <option value="ind">+31</option>
-                <option value="ind">+40</option>
-                <option value="ind">+51</option>
-                <option value="ind">+62</option>
-                <option value="ind">+84</option>
-                <option value="ind">+91</option>
-                <option value="ind">+98</option>
-                <option value="ind">+212</option>
-                <option value="ind">+224</option>
-                <option value="ind">+500</option>
-            </select>
-            <input class="mobile" placeholder="Mobile Number" type="number" />
-            <button>Sign In With Email ?</button>
-            <button class="cancel">CANCEL</button>
+            <div id="siw1b">
+                <p>Sign In</p>
+                <button id="" class="signup">Sign Up Insted</button>
+            </div>
+            <hr id="firstline">
+            <div id="phone">
+                <select class="countrycode">
+                    <option value="ind">+1</option>
+                    <option value="ind">+20</option>
+                    <option value="ind">+31</option>
+                    <option value="ind">+40</option>
+                    <option value="ind">+51</option>
+                    <option value="ind">+62</option>
+                    <option value="ind">+84</option>
+                    <option value="ind">+91</option>
+                    <option value="ind">+98</option>
+                    <option value="ind">+212</option>
+                    <option value="ind">+224</option>
+                    <option value="ind">+500</option>
+                </select>
+                <input class="mobile" placeholder="Mobile Number" type="number" />
+            </div>
+            <button id="with-email">Sign In With Email ?</button>
+            <hr id="secondline">
+            <a href="index.html"><button id="signin-cancel" class="cancel">CANCEL</button></a>
             <button id="verify-login">VERIFY WITH OTP</button>
     
         </div>
     
         <div id="signupwindow">
-            
-            <h1>Sign Up</h1>
-            <p>Mobile number doesnt exist. Please sign up instead.</p>
-            <select class="countrycode">
+            <div id="siw1b">
+            <p>Sign Up</p>
+            <button class="signup">Sign In Insted</button>
+            </div>
+            <hr id="fline">
+            <div id="nomobilenumber"><i class="fa-solid fa-exclamation"></i><p>Mobile number doesnt exist. Please sign up instead.</p></div>
+           <div id="phone1">
+            <select id="countrycode">
                 <option value="ind">+1</option>
                 <option value="ind">+20</option>
                 <option value="ind">+31</option>
@@ -79,33 +94,41 @@
                 <option value="ind">+500</option>
             </select>
             <input id="mobile" placeholder="Mobile Number" type="number" />
+           </div>
             <input id="email" placeholder="Email Address" type="email" />
             <input id="password" placeholder="Password" type="password" />
+           <div id="user_nam">
             <input id="first-name" placeholder="First Name" type="text" />
             <input id="last-name" placeholder="Last Name" type="text" />
-            <button class="cancel">CANCEL</button>
-            <button id="verify">VERIFY WITH OTP</button>
+           </div>
+            <hr id="sline">
+            <div id="only">
+                <button id="can" class="cancel">CANCEL</button>
+                <button id="verify">VERIFY WITH OTP</button>
+            </div>
             
         </div>
     
-        <div id="3line-popup-window">
-            <div class="closewindow">close mark</div>
-            <h2>ARE YOU A PROPERTY OWNER/MANAGER?</h2>
-            <p>List New Property</p>
-            <hr>
-            <h2>HOLIDY HOMES FOR SALE</h2>
-            <p>Tripvillas Managed</p>
-            <p>Homes from A grade developers. Rentals guaranteed</p>
-            <p>Marketplace</p>
-            <p>See what homes are up for sale from different property owners.</p>
-            <hr>
-            <h4>About Us</h4>
-            <h4>Privacy Policy</h4>
-            <h4>Terms of Use</h4>
-            <h4>FAQs</h4>
-            <h4>Contact Us</h4>
-            <hr>
-            <h4>C Tripvillas Pte Ltd</h4>
+        <div id="boxfirst">
+            <div id="threelinepop">
+                <i id="close" class="fa-sharp fa-solid fa-xmark"></i>
+                <h5>ARE YOU A PROPERTY OWNER/MANAGER?</h5>
+                <p>List New Property</p>
+                <hr id="oneline">
+                <h5>HOLIDY HOMES FOR SALE</h5>
+                <p>Tripvillas Managed</p>
+                <p>Homes from A grade developers. Rentals guaranteed</p>
+                <p>Marketplace</p>
+                <p>See what homes are up for sale from different property owners.</p>
+                <hr id="secline">
+                <p>About Us</h4>
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+                <p>FAQs</p>
+                <p>Contact Us</p>
+                <hr>
+                <p>C Tripvillas Pte Ltd</p>
+            </div>
         </div>
     </div>
 
@@ -196,3 +219,5 @@
     
 </body>
 </html>
+
+<script src="Scripts/index.js"></script>

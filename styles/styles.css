@@ -42,14 +42,14 @@
 
 #user-details{
     border: 0px solid black;
-    width: 75px;
+    width: 110px;
     display: grid;
     gap: 5px;
-    padding: 25px 80px 25px 10px;
+    padding: 25px 80px 25px 5px;
     position: absolute;
-    margin-left: 77%;
+    margin-left: 80%;
     visibility: hidden;
-    background-color: plum;
+    background-color: white;
     z-index: 999;
 	
 }
@@ -58,7 +58,7 @@
     border: white;
     background-color: white;
     color: gray;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 #signinwindow{

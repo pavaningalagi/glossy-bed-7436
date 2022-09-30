@@ -73,39 +73,6 @@ let Verify_with_otp = document.querySelector("#verify");
         document.getElementById("signupwindow").style.visibility="hidden";
 
         }
-        
-// let place= document.getElementById("location");
-//     place.addEventListener("input", locationinder);
-//           function locationinder() {
-            
-//             let input = document.getElementById("location");
-//             let filter = input.value.toUpperCase();
-//             let ul = document.getElementById("goa");
-//             let li = ul.getElementsByTagName("li");
-//             for (let i = 0; i < li.length; i++) {
-//              let x = li[i];
-//               if (x.innerHTML.toUpperCase().indexOf(filter) > -1) {
-//                 li[i].style.display = "";
-//               } else {
-//                 li[i].style.display = "none";
-//               }
-//             }
-//             document.getElementById("goa").visibility="visible";
-          }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let calculate= document.getElementById("search");
           calculate.addEventListener("click", search);
           function search(event){
