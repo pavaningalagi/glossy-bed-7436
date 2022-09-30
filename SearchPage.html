@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/homepage.css">
+    <script 
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html"><img src="https://d2v8elt324ukrb.cloudfront.net/static/riotuikit/images/logo.c72056a22f91.png" alt=""></a>
+        
+        <div id="nav-right-box">
+            <i  id="icon" class="fa-sharp fa-solid fa-user"></i>
+            <select id="curency">
+                <option value="option">INR</option>
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="AED">AED</option>
+                <option value="JPY">JPY</option>
+                <option value="CZK">CZK</option>
+                <option value="CAD">CAD</option>
+                <option value="BRL">BRL</option>
+                <option value="ILS">ILS</option>
+                <option value="NZD">NZD</option>
+            </select>
+            <i id="sidepopup" class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <div id="navbar-popups">
+        <div id="user-details">
+            <button class="signin">SIGN IN</button>
+            <button class="signup">SIGN UP</button>
+        </div>
+    
+        <div id="signinwindow">
+            <div id="siw1b">
+                <p>Sign In</p>
+                <button id="" class="signup">Sign Up Insted</button>
+            </div>
+            <hr id="firstline">
+            <div id="phone">
+                <select class="countrycode">
+                    <option value="ind">+1</option>
+                    <option value="ind">+20</option>
+                    <option value="ind">+31</option>
+                    <option value="ind">+40</option>
+                    <option value="ind">+51</option>
+                    <option value="ind">+62</option>
+                    <option value="ind">+84</option>
+                    <option value="ind">+91</option>
+                    <option value="ind">+98</option>
+                    <option value="ind">+212</option>
+                    <option value="ind">+224</option>
+                    <option value="ind">+500</option>
+                </select>
+                <input class="mobile" placeholder="Mobile Number" type="number" />
+            </div>
+            <button id="with-email">Sign In With Email ?</button>
+            <hr id="secondline">
+            <a href="index.html"><button id="signin-cancel" class="cancel">CANCEL</button></a>
+            <button id="verify-login">VERIFY WITH OTP</button>
+    
+        </div>
+    
+        <div id="signupwindow">
+            <div id="siw1b">
+            <p>Sign Up</p>
+            <button class="signup">Sign In Insted</button>
+            </div>
+            <hr id="fline">
+            <div id="nomobilenumber"><i class="fa-solid fa-exclamation"></i><p>Mobile number doesnt exist. Please sign up instead.</p></div>
+           <div id="phone1">
+            <select id="countrycode">
+                <option value="ind">+1</option>
+                <option value="ind">+20</option>
+                <option value="ind">+31</option>
+                <option value="ind">+40</option>
+                <option value="ind">+51</option>
+                <option value="ind">+62</option>
+                <option value="ind">+84</option>
+                <option value="ind">+91</option>
+                <option value="ind">+98</option>
+                <option value="ind">+212</option>
+                <option value="ind">+224</option>
+                <option value="ind">+500</option>
+            </select>
+            <input id="mobile" placeholder="Mobile Number" type="number" />
+           </div>
+            <input id="email" placeholder="Email Address" type="email" />
+            <input id="password" placeholder="Password" type="password" />
+           <div id="user_nam">
+            <input id="first-name" placeholder="First Name" type="text" />
+            <input id="last-name" placeholder="Last Name" type="text" />
+           </div>
+            <hr id="sline">
+            <div id="only">
+                <button id="can" class="cancel">CANCEL</button>
+                <button id="verify">VERIFY WITH OTP</button>
+            </div>
+            
+        </div>
+    
+        <div id="boxfirst">
+            <div id="threelinepop">
+                <i id="close" class="fa-sharp fa-solid fa-xmark"></i>
+                <h5>ARE YOU A PROPERTY OWNER/MANAGER?</h5>
+                <p>List New Property</p>
+                <hr id="oneline">
+                <h5>HOLIDY HOMES FOR SALE</h5>
+                <p>Tripvillas Managed</p>
+                <p>Homes from A grade developers. Rentals guaranteed</p>
+                <p>Marketplace</p>
+                <p>See what homes are up for sale from different property owners.</p>
+                <hr id="secline">
+                <p>About Us</h4>
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+                <p>FAQs</p>
+                <p>Contact Us</p>
+                <hr>
+                <p>C Tripvillas Pte Ltd</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="search-page">
+        <div id="filer-box">
+            <div> APPLY FILTERS </div>
+            <div> MODIFY SEARCH </div>
+        </div>
+        <div id="result-box">
+            <div id="1st-box">
+                <h3>Total <span id="result-count">0</span> result</h3>
+                <p>Sort By</p>
+            </div>
+            <div>
+                <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/65507480/28-budget-holidays-in-goa_watermarked_image_1024.jpeg" alt="">
+                <p>Ref Id #65507480</p>
+                <h2>3 Bedrooms Private Villa For Rent In Calangute</h2>
+                <p>Candolim, Goa, India</p>
+                <div id="fecility">
+                    <div>VILLA</div>
+                    <div>3 BEDROOMS</div>
+                    <div>3 BATHROOMS</div>
+                    <div>MAX 9 GUESTS</div>
+                    <div>WIFI</div>
+                    <div>TV</div>
+                    <div>AC</div>
+                </div>
+                <div id="price">28264.00<P>for 3 nights</P></div>
+            </div>
+            <div>
+                <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/17228140/790b7909ac5311e99e4f0a8e1b1ce4da_watermarked_image_1024.jpeg" alt="">
+                <p>Ref Id #17228140</p>
+                <h2>Garden View Eco Hut @ Betalbatim</h2>
+                <p>Betalbatim, Goa, India</p>
+                <div id="fecility">
+                    <div>room</div>
+                    <div>SWIMMING POOL</div>
+                    <div>SPA</div>
+                    <div>MAX 3 GUESTS</div>
+                    <div>WIFI</div>
+                    <div>TV</div>
+                    <div>AC</div>
+                </div>
+                <div id="price">15944.00<P>for 3 nights</P></div>
+            </div>
+            <div>
+                <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/49558523/e968a93938a011ec8f4f0a5f3ca25ae5_watermarked_image_1024.jpeg" alt="">
+                <p>Ref Id #49558523</p>
+                <h2>3 Bhk Villa With Shared Swimming Pool</h2>
+                <p>Calangute, Goa, India</p>
+                <div id="fecility">
+                    <div>VILLA</div>
+                    <div>3 BEDROOMS</div>
+                    <div>SWIMMING POOL</div>
+                    <div>MAX 9 GUESTS</div>
+                    <div>WIFI</div>
+                    <div>TV</div>
+                    <div>AC</div>
+                </div>
+                <div id="price">28264.00<P>for 3 nights</P></div>
+            </div>
+            <div>
+                <img src="https://d2vcelvjdj7n25.cloudfront.net/media/property_photos/image_watermarked_1024/33187354/6290fb7dd36d11e89ed80a8e1b1ce4da_watermarked_image_1024.jpeg" alt="">
+                <p>Ref Id #33187354</p>
+                <h2>Private Pool Villa In Goa</h2>
+                <p>Goa, Goa, India</p>
+                <div id="fecility">
+                    <div>VILLA</div>
+                    <div>3 BEDROOMS</div>
+                    <div>3 BATHROOMS</div>
+                    <div>MAX 6 GUESTS</div>
+                    <div>SWIMMING POOL</div>
+                    <div>SPA</div>
+                    <div>WIFI</div>
+                    <div>TV</div>
+                    <div>AC</div>
+                </div>
+                <div id="price">28264.00<P>for 3 nights</P></div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    
+    
+</body>
+</html>
+
+<script src="Scripts/index.js"></script>
