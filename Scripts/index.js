@@ -3,7 +3,8 @@ let icon= document.querySelector("#icon");
     icon.addEventListener("click", signinandsignup);
     function signinandsignup(event){
         event.preventDefault();
-    console.log("icon");
+    // console.log("icon");
+    document.getElementById("user-details").style.visibility="visible";
     }
 
 let signin = document.querySelectorAll(".signin");
@@ -12,26 +13,44 @@ signin.forEach(function (el,i){
     el.addEventListener("click", signinwindow);
 function signinwindow(event){
     event.preventDefault;
-    console.log("signin window");
+    //console.log("signin window");
+    document.getElementById("user-details").style.visibility="hidden";
+    document.getElementById("signinwindow").style.visibility="visible";
 }
 });
 
-let signup = document.querySelectorAll(".signup");
-    signup.forEach(function(el,i){
-        // console.log(el);
-        el.addEventListener("click", signupwindow);
+let signup = document.querySelector("#verify-login");
+    signup.addEventListener("click", signupwindow);
     function signupwindow(event){
        event.preventDefault;
-       console.log("signup window");
+       //console.log("signup window");
+       document.getElementById("signinwindow").style.visibility="hidden";
+       document.getElementById("signupwindow").style.visibility="visible";
    }
-})
 
 
-let verify_login = document.querySelector("#verify-login");
-verify_login.addEventListener("click", verifylogin);
-    function verifylogin(event){
+let signin_cancel = document.querySelector("#signin-cancel");
+    signin_cancel.addEventListener("click", signincancel);
+        function signincancel(event){
+            event.preventDefault();
+            document.getElementById("signinwindow").style.visibility="hidden";
+
+    }
+
+    let sidepopup= document.querySelector("#sidepopup");
+    sidepopup.addEventListener("click",sidepopupline);
+
+    function sidepopupline(event){
         event.preventDefault();
-    console.log("signup window");
+        document.getElementById("threelinepop").style.visibility="visible";
+    }
+
+let close= document.querySelector("#close");
+    close.addEventListener("click",closethis);
+
+    function closethis(event){
+        event.preventDefault();
+        document.getElementById("threelinepop").style.visibility="hidden";
     }
 
 
@@ -51,24 +70,41 @@ let Verify_with_otp = document.querySelector("#verify");
        // console.log(getDataObj);
         getDataArr.push(getDataObj);
         localStorage.setItem("data",JSON.stringify(getDataArr));
+        document.getElementById("signupwindow").style.visibility="hidden";
+
         }
         
-let place= document.getElementById("location");
-    place.addEventListener("input", locationinder);
-          function locationinder() {
-            let input = document.getElementById("location");
-            let filter = input.value.toUpperCase();
-            let ul = document.getElementById("goa");
-            let li = ul.getElementsByTagName("li");
-            for (let i = 0; i < li.length; i++) {
-             let x = li[i];
-              if (x.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "";
-              } else {
-                li[i].style.display = "none";
-              }
-            }
+// let place= document.getElementById("location");
+//     place.addEventListener("input", locationinder);
+//           function locationinder() {
+            
+//             let input = document.getElementById("location");
+//             let filter = input.value.toUpperCase();
+//             let ul = document.getElementById("goa");
+//             let li = ul.getElementsByTagName("li");
+//             for (let i = 0; i < li.length; i++) {
+//              let x = li[i];
+//               if (x.innerHTML.toUpperCase().indexOf(filter) > -1) {
+//                 li[i].style.display = "";
+//               } else {
+//                 li[i].style.display = "none";
+//               }
+//             }
+//             document.getElementById("goa").visibility="visible";
           }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 let calculate= document.getElementById("search");
           calculate.addEventListener("click", search);
@@ -82,7 +118,10 @@ let calculate= document.getElementById("search");
             let total_days= Math.ceil(time / (1000 * 60 * 60 * 24));
             console.log(total_days);
             localStorage.setItem("days",total_days);
+            
           }
+
+
 
           
 
