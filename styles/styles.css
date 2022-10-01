@@ -11,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
+
 }
 
 #navbar>a>img{
@@ -20,6 +21,7 @@
     align-items: center;
     padding: 10px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 #nav-right-box{
@@ -38,6 +40,7 @@
     background-color: #262626;
     color: white;
     font-size: 15px;
+    cursor: pointer;
 }
 
 #user-details{
@@ -59,6 +62,7 @@
     background-color: white;
     color: gray;
     font-size: 12px;
+    cursor: pointer;
 }
 
 #signinwindow{
@@ -78,6 +82,7 @@
     border: 0px solid black;
     display: flex;
     justify-content: space-between;
+    
 }
 
 #siw1b>button{
@@ -144,6 +149,8 @@
     color: black;
     font-size: 15px;
     border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    cursor: pointer;
 }
 
 #verify-login{   
@@ -158,6 +165,8 @@
     font-size: 15px;
     border: none;
     border-color: gray;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    cursor: pointer;
 }
 
 #signupwindow{
@@ -267,6 +276,7 @@
     border:1px;
     margin-left: 190px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
 }
 
 #verify{
@@ -281,6 +291,7 @@
     font-size: 15px;
     border: none;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
 }
 
 #threelinepop{
@@ -297,12 +308,13 @@
     visibility: hidden;
     z-index: 999;
     color: white;
-    
+
 }
 
 #close{
     border: 0px solid red;
     margin-left: 85%;
+    cursor: pointer;
 }
 
 #oneline{
@@ -314,6 +326,9 @@
     margin-bottom:5px ;
 
 }
+
+
+
 
 
 
