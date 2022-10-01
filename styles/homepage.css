@@ -27,6 +27,7 @@
   margin-top: -400px;
   width: 55%;
   margin-left: 310px;
+  opacity: 0.8;
 
 }
 
@@ -119,6 +120,7 @@
 
 .destination-container::-webkit-scrollbar{
 display: none;
+color: gray;
 }
 
 .destination-card{
@@ -127,6 +129,7 @@ display: none;
   width: 250px;
   height: 150px;
   margin-right: 40px;
+  color: gray;
 
 }
 
@@ -184,7 +187,7 @@ display: none;
   width: 90%;
   margin: auto;
   margin-bottom: 5%;
-  
+  color: gray;  
  }
 
  #fm-left-box{
