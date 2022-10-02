@@ -214,6 +214,7 @@
 #phone1>#countrycode{
     background-color: white;
     height: 45px; 
+    cursor: pointer;
 }
 
 #phone1>#mobile{
