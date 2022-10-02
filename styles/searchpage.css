@@ -1,0 +1,160 @@
+*{
+    font-family: ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  #search-page{
+    margin: auto;
+    width: 75%;
+    border: 0px solid yellow;
+
+  }
+
+#filer-box{
+    border: 0px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin: auto;
+}
+
+#filer-box>div:first-child{
+  cursor: pointer;
+    
+}
+
+#filer-box>div:nth-child(2){
+  cursor: pointer;
+    
+}
+
+#result-box{
+  width: 90%;
+  margin: auto;
+  border: 0px solid red;
+}
+
+#st-box{
+  border: 0px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  margin-top: 15px;
+  font-size: 12px;
+  color: gray;
+}
+
+#st-box>p{
+  font-size: 16px;
+
+}
+
+#st-box p>span{
+  color: #007df9;
+  cursor: pointer;
+}
+
+.hotel-box{
+  border: 0px solid red;
+  display: flex;
+  margin-bottom: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+.hotel-box>img{
+  width: 40%;
+}
+
+.info-edge{
+  border: 0px solid black;
+  width: 100%;
+  padding: 15px 15px;
+
+}
+.info-edge>p:first-child{
+  font-size: 13px;
+  color: gray;
+}
+
+.info-edge p:nth-child(3){
+  color:  #007df9;
+  opacity: 0.9;
+}
+
+.info-edge p:nth-child(3):hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.fecility{
+  border: 0px solid red;
+  display: flex;
+
+  gap: 10px;
+  padding: 15px 0px;
+  font-size: 14px;
+
+}
+
+.fecility>div{
+  border: 1px solid #d6cdcd;
+  padding: 5px 5px;
+  width: auto;
+  
+}
+
+.price{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.price>span{
+  font-size: 14px;
+  padding-left: 10px;
+  color: gray;
+}
+
+#showmore{
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  border: 0px solid #007df9;
+  width: 200px;
+  padding: 10px 20px;
+  background-color: #007df9;
+  color: white;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+#showmore:hover{
+  opacity: 1;
+}
+
+.price>i{
+  font-size: 26px;
+  padding-right: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
